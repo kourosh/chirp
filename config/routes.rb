@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   post '/' => 'home#create'
 
+  get 'edit/:id' => 'edit#show'
+
 
 
 

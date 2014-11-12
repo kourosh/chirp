@@ -32,6 +32,9 @@ gem 'pry-rails'
 # awesome-print
 gem 'awesome_print', :require => 'ap'
 
+# will paginate
+gem 'will_paginate', '~> 3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
