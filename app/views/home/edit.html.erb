@@ -21,24 +21,26 @@
 	</div>
 </div>
 
+<%= form_tag do %>
 <div class="container margin-top-10">
 	<div class="one-chirp border-radius-10">
 		<div class="row">
 			<div class="col-sm-1">
-				<img src="img/birds/bird1.png" class="img-responsive" />
+				<img src="../..assets/images/birds/bird1.png" class="img-responsive" />
 			</div>
 			<div class="col-sm-11">
 				<div class="margin-top-10">
-					<textarea class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</textarea>
+					<textarea name="body" class="form-control"><%= @tweet.body %></textarea>
 				</div>
 				<div class="margin-top-10 txt-right">
-					<button class="btn btn-danger">Delete Chirp</button>
-					<button class="btn btn-primary">Edit Chirp</button>
+					<button name="delete_button" class="btn btn-danger">Delete Chirp</button>
+					<button class="btn btn-primary">Save Chirp</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<% end %>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 

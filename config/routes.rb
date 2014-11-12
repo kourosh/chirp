@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   post '/' => 'home#create'
 
-  get 'edit/:id' => 'edit#show'
+  get '/edit/:id' => 'home#show'
+
+  post '/edit/:id' => 'home#update'
 
 
 
