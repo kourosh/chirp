@@ -21,17 +21,19 @@
 	</div>
 </div>
 
-<div class="container margin-top-10">
-	<div id="chirp-wrapper" class="border-radius-10">
-		<div>
-			<textarea id="chirp-text" class="form-control" placeholder="You can chirp here. Make sure it's less than 140 characters!"></textarea>
-		</div>
-		<div class="margin-top-10 txt-right">
-			<button id="cancel-chirp-button" type="button" class="btn btn-default margin-right-10">Don't Chirp</button>
-			<button type="submit" class="btn btn-primary">Chirp!</button>
+<%= form_tag do %>
+	<div class="container margin-top-10">
+		<div id="chirp-wrapper" class="border-radius-10">
+			<div>
+				<textarea id="chirp-text" class="form-control" placeholder="You can chirp here. Make sure it's less than 140 characters!"></textarea>
+			</div>
+			<div class="margin-top-10 txt-right">
+				<button id="cancel-chirp-button" type="button" class="btn btn-default margin-right-10">Don't Chirp</button>
+				<button type="submit" class="btn btn-primary">Chirp!</button>
+			</div>
 		</div>
 	</div>
-</div>
+<% end %>
 
 <div class="container margin-top-10">
 	<div class="one-chirp border-radius-10">
